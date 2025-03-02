@@ -64,12 +64,12 @@ python distiilation/gen_syn_image.py     --dataset imagenet     --diffusion_chec
 ```
 
 ### Validate
-##### **Minimax** validation method (ImageWoof, ImageNette, ImageNet-100, and ImageIDC)
+##### [Minimax](https://github.com/vimar-gu/MinimaxDiffusion) validation method (ImageWoof, ImageNette, ImageNet-100, and ImageIDC)
 ```sh
 python evaluation/Minimax/train.py -d imagenet --imagenet_dir ../data/distilled_data-imagenet-nette-ipc10-0.7-30/imagenet_ipc10_10_s0.7_g10.0_kmexpand1_seed0/ ~/ImageNette/ -n resnet_ap --nclass 10 --norm_type instance --ipc 10 --tag test --slct_type random --repeat 3 --spec nette --seed 0
 ```
-##### **RDED** validation method (ImageNet-1K, CIFAR10/CIFAR100, Tiny-ImageNet)
-Pre-trained observer models are download from [RDED](https://github.com/LINs-lab/RDED)
+##### [RDED](https://github.com/LINs-lab/RDED) validation method (ImageNet-1K, CIFAR10/CIFAR100, Tiny-ImageNet)
+Pre-trained observer models are download from RDED
 ```sh 
 # Step 1: Rename the class folders of the test set and the generated data to the format "00000", "00001", "00002", etc.
 sh evaluation/RDED/cifar10_rename

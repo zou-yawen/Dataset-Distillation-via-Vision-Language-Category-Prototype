@@ -1,9 +1,3 @@
-'''
-Generate prototype using the diffusers pipeline
-Author: Su Duo & Houjunjie
-Date: 2023.9.21
-'''
-
 from diffusers import StableDiffusionGenLatentsPipeline
 from sklearn.metrics import davies_bouldin_score
 from sklearn.neighbors import LocalOutlierFactor
@@ -53,7 +47,7 @@ def parse_args():
                         help='root dir')
     parser.add_argument('--dataset', default='imagenet', type=str, 
                         help='data prepare to distillate:imagenet/tiny-imagenet')
-    parser.add_argument('--diffusion_checkpoints_path', default="D3M/stablediffusion/checkpoints/stable-diffusion-v1-5", type=str, 
+    parser.add_argument('--diffusion_checkpoints_path', default="stablediffusion/checkpoints/stable-diffusion-v1-5", type=str, 
                         help='path to stable diffusion model from pretrained')
     parser.add_argument('--ipc', default=1, type=int, 
                         help='image per class')
@@ -67,7 +61,7 @@ def parse_args():
                         help='root dir')
     parser.add_argument('--num_workers', default=4, type=int, 
                         help='number of workers')
-    parser.add_argument('--save_prototype_path', default='D3M/prototypes', type=str, 
+    parser.add_argument('--save_prototype_path', default='prototypes', type=str, 
                         help='where to save the generated prototype json files')
     parser.add_argument('--seed', default=0, type=int, 
                         help='seed')              
@@ -127,10 +121,7 @@ def prototype_kmeans(pipe, data_loader, label_list, km_models, path_all, args):
             print(f'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx{len(latents[prompt])}')
             prompt_to_paths[prompt] = np.array(prompt_to_paths[prompt])[inliers].tolist()
             km_models[f"KMeans_{prompt}"].fit(np.vstack(latents.pop(prompt,None)))
-    print(len(latents))
-    with open('test_mp.txt','w')as fp:
-        for key,value in prompt_to_paths.items():
-            print(f'{key}----{value}',file=fp)
+    
     return km_models,prompt_to_paths
 
 

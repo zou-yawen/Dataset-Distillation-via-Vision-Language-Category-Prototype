@@ -49,11 +49,11 @@ def parse_args():
                         help='threshold')
     parser.add_argument('--tpk', default=20, type=int, 
                         help='topcommon words')
-    parser.add_argument('--data_dir', default='/home-ext/tbw/suduo/data/imagenet', type=str, 
+    parser.add_argument('--data_dir', default='data/imagenet', type=str, 
                         help='root dir')
     parser.add_argument('--dataset', default='imagenet', type=str, 
                         help='data prepare to distillate:imagenet/tiny-imagenet')
-    parser.add_argument('--diffusion_checkpoints_path', default="/home-ext/tbw/suduo/D3M/stablediffusion/checkpoints/stable-diffusion-v1-5", type=str, 
+    parser.add_argument('--diffusion_checkpoints_path', default="D3M/stablediffusion/checkpoints/stable-diffusion-v1-5", type=str, 
                         help='path to stable diffusion model from pretrained')
     parser.add_argument('--ipc', default=1, type=int, 
                         help='image per class')
@@ -63,11 +63,11 @@ def parse_args():
                         help='contamination')
     parser.add_argument('--km_expand', default=10, type=int, 
                         help='expand ration for minibatch k-means model')
-    parser.add_argument('--label_file_path', default='/home-ext/tbw/suduo/data/imagenet_classes.txt', type=str, 
+    parser.add_argument('--label_file_path', default='data/imagenet_classes.txt', type=str, 
                         help='root dir')
     parser.add_argument('--num_workers', default=4, type=int, 
                         help='number of workers')
-    parser.add_argument('--save_prototype_path', default='/home-ext/tbw/suduo/D3M/prototypes', type=str, 
+    parser.add_argument('--save_prototype_path', default='D3M/prototypes', type=str, 
                         help='where to save the generated prototype json files')
     parser.add_argument('--seed', default=0, type=int, 
                         help='seed')              

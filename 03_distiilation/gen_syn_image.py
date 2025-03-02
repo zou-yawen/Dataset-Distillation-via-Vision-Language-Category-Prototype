@@ -20,7 +20,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--batch_size', default=10, type=int, 
                         help='batch size')
-    parser.add_argument('--diffusion_checkpoints_path', default="/home-ext/tbw/suduo/D3M/stablediffusion/checkpoints/stable-diffusion-v1-5", type=str, 
+    parser.add_argument('--diffusion_checkpoints_path', default="D3M/stablediffusion/checkpoints/stable-diffusion-v1-5", type=str, 
                         help='path to stable diffusion model from pretrained')
     parser.add_argument('--dataset', default='cifar10', type=str, 
                         help='data prepare to distillate')
@@ -30,13 +30,13 @@ def parse_args():
                         help='image per class')
     parser.add_argument('--km_expand', default=10, type=int, 
                         help='expand ration for minibatch k-means model')
-    parser.add_argument('--label_file_path', default='/home-ext/tbw/suduo/data/imagenet_classes.txt', type=str, 
+    parser.add_argument('--label_file_path', default='data/imagenet_classes.txt', type=str, 
                         help='root dir')
-    parser.add_argument('--prototype_path', default='/home-ext/tbw/suduo/D3M/prototypes/imagenet-ipc1-kmexpand1.json', type=str, 
+    parser.add_argument('--prototype_path', default='D3M/prototypes/imagenet-ipc1-kmexpand1.json', type=str, 
                         help='prototype path')
-    parser.add_argument('--text_prototype', default='/home-ext/tbw/suduo/D3M/prototypes/imagenet-ipc1-kmexpand1.json', type=str, 
+    parser.add_argument('--text_prototype', default='D3M/prototypes/imagenet-ipc1-kmexpand1.json', type=str, 
                         help='prototype path')
-    parser.add_argument('--save_init_image_path', default='/home-ext/tbw/suduo/data/init_data/random', type=str, 
+    parser.add_argument('--save_init_image_path', default='data/init_data/random', type=str, 
                         help='where to save the generated prototype json files')
     parser.add_argument('--strength', '-s', default=0.75, type=float, 
                         help='diffusers strength')

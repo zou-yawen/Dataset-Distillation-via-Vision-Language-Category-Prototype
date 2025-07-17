@@ -1,4 +1,4 @@
-# Dataset Distillation via Vision-Language Category Prototype [**[arxiv](https://arxiv.org/abs/2506.23580)**] [**[appendix](https://drive.google.com/uc?export=download&id=15dBJ6kRDmMtNlPRDzNGv6FlaF0Bn3RAW)**]  
+# （ICCV 2025）Dataset Distillation via Vision-Language Category Prototype [**[arxiv](https://arxiv.org/abs/2506.23580)**] [**[appendix](https://drive.google.com/uc?export=download&id=15dBJ6kRDmMtNlPRDzNGv6FlaF0Bn3RAW)**]  
 
 ## ✨ Stellar Features
 - 🔥 First to incorporate language information into visual dataset distillation (DD), enhancing image features such as shape, color, and background through textual descriptions

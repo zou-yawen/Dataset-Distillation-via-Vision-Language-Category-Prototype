@@ -105,3 +105,14 @@ Our code is developed based on the following codebases, thanks for sharing！<br
 [D4M: Dataset Distillation via Disentangled Diffusion Model](https://github.com/suduo94/D4M?tab=readme-ov-file#-acknowledgments)<br>
 [Efficient Dataset Distillation via Minimax Diffusion](https://github.com/vimar-gu/MinimaxDiffusion)<br>
 [On the Diversity and Realism of Distilled Dataset: An Efficient Dataset Distillation Paradigm](https://github.com/LINs-lab/RDED)
+
+## Citation
+If you find this work useful, please consider citing:
+
+```bibtex
+@inproceedings{zou2025vlcp,
+  title={Dataset Distillation via Vision-Language Category Prototype},
+  author={Zou, Yawen and Li, Guang and Su, Duo and Wang, Zi and Yu, Jun and Zhang, Chao},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2025}
+}

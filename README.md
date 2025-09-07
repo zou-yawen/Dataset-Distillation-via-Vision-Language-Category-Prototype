@@ -14,6 +14,17 @@ By combining text and image prototypes, our approach enhances dataset quality, p
 
 ![Overview of D⁴M](figure/overview.png)
 
+## 🔗 Download
+
+**Models + Distilled Datasets:**  
+[Download all resources](<https://gofile.me/6UrIQ/zaQO2ICY5>)
+
+This link contains:
+- **Trained models** (Stable Diffusion fine-tuned with LLaVA semantics; seeds `{0,1,2}`).
+- **Distilled datasets** (ImageNet-1K and subsets).  
+Each folder is labeled accordingly (e.g., `models/` and `datasets/`). We report results as the **average across the three seeds** unless stated otherwise.
+
+
 ## 🚀 Quick Start
 
 ### Create environment
@@ -116,3 +127,4 @@ If you find this work useful, please consider citing:
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2025}
 }
+

@@ -61,7 +61,7 @@ You can train diffusion model follow the code below or you can use the model tra
 ```sh
 export TRAIN_DIR="ImageNette/train"
 export MODEL_NAME="benjamin-paine/stable-diffusion-v1-5"
-export OUTPUT_DIR="diffusers/cifar100_seed0"
+export OUTPUT_DIR="diffusers/ImageNette_seed0"
 accelerate launch train_text_to_image.py   --pretrained_model_name_or_path=$MODEL_NAME   --train_data_dir=$TRAIN_DIR   --use_ema   --resolution=512 --center_crop --random_flip   --train_batch_size=8   --gradient_accumulation_steps=4   --gradient_checkpointing   --mixed_precision="fp16"      --learning_rate=1e-05   --max_grad_norm=1   --lr_scheduler="constant" --lr_warmup_steps=0   --output_dir=${OUTPUT_DIR} --num_train_epochs 8 --validation_epochs 2 --seed 0 --checkpoints_total_limit 2 --checkpointing_steps 500
 ```
 
@@ -127,4 +127,5 @@ If you find this work useful, please consider citing:
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2025}
 }
+
 

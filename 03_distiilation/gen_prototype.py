@@ -20,7 +20,7 @@ import os
 from sklearn.cluster import MiniBatchKMeans
 from tqdm import tqdm
 from classes import IMAGENET2012_CLASSES
-from dataset_utils2 import *
+from dataset_utils import *
 import ipdb
 from collections import Counter
 from sklearn.cluster import KMeans  # 修改导入

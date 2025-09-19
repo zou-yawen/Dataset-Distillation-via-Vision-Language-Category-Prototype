@@ -63,7 +63,7 @@ export OUTPUT_DIR="diffusers/ImageNette_seed0"
 accelerate launch train_text_to_image.py   --pretrained_model_name_or_path=$MODEL_NAME   --train_data_dir=$TRAIN_DIR   --use_ema   --resolution=512 --center_crop --random_flip   --train_batch_size=8   --gradient_accumulation_steps=4   --gradient_checkpointing   --mixed_precision="fp16"      --learning_rate=1e-05   --max_grad_norm=1   --lr_scheduler="constant" --lr_warmup_steps=0   --output_dir=${OUTPUT_DIR} --num_train_epochs 8 --validation_epochs 2 --seed 0 --checkpoints_total_limit 2 --checkpointing_steps 500
 ```
 
-#### Modify Diffusers Library or use our modified version of the Diffusers library [Download all resources](<https://gofile.me/6UrIQ/zaQO2ICY5>).
+#### Modify Diffusers Library or use our modified version of the Diffusers library [Google Drive](<https://drive.google.com/drive/folders/1qENjFnh--QmGsceC0jFaUpGCindK7nCB?usp=sharing>).
 
 
 Step 1: Copy the pipeline scripts (generate latents pipeline and synthesis images pipeline) into the path of Diffusers Library: diffusers/src/diffusers/pipelines/stable_diffusion.
@@ -131,6 +131,7 @@ If you find this work useful, please consider citing:
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2025}
 }
+
 
 
 

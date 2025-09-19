@@ -15,6 +15,7 @@ By combining text and image prototypes, our approach enhances dataset quality, p
 ![Overview of D⁴M](figure/overview.png)
 
 ## 🔗 Download
+If the results you obtain using our provided training models differ substantially from those reported in the paper, please feel free to contact me—I would be happy to help troubleshoot.
 
 **Models + Distilled Datasets:**  
 [Download all resources](<https://gofile.me/6UrIQ/zaQO2ICY5>)
@@ -128,6 +129,7 @@ If you find this work useful, please consider citing:
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2025}
 }
+
 
 
 

@@ -19,6 +19,7 @@ If the results you obtain using our provided training models differ substantiall
 
 **Models + Distilled Datasets:**  
 [Download all resources](<https://gofile.me/6UrIQ/zaQO2ICY5>)
+ [Google Drive](<[https://gofile.me/6UrIQ/zaQO2ICY5](https://drive.google.com/drive/folders/1qENjFnh--QmGsceC0jFaUpGCindK7nCB?usp=sharing)>)
 
 This link contains:
 - **Trained models** (Stable Diffusion fine-tuned with LLaVA semantics; seeds `{0,1,2}`).
@@ -129,6 +130,7 @@ If you find this work useful, please consider citing:
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2025}
 }
+
 
 
 

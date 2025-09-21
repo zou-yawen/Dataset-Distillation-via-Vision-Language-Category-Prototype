@@ -82,8 +82,16 @@ python distiilation/gen_syn_image.py     --dataset imagenet     --diffusion_chec
 
 ### Validate
 ##### [Minimax](https://github.com/vimar-gu/MinimaxDiffusion) validation method (ImageWoof, ImageNette, ImageNet-100, and ImageIDC)
+For ImageNette/ImageIDC validation
 ```sh
-python evaluation/Minimax/train.py -d imagenet --imagenet_dir ../data/distilled_data-imagenet-nette-ipc10-0.7-30/imagenet_ipc10_10_s0.7_g10.0_kmexpand1_seed0/ ~/ImageNette/ -n resnet_ap --nclass 10 --norm_type instance --ipc 10 --tag test --slct_type random --repeat 3 --spec nette --seed 0
+cd evaluation/Minimax/
+python train.py -d imagenet --imagenet_dir ../data/distilled_data-imagenet-nette-ipc10-0.7-30/imagenet_ipc10_10_s0.7_g10.0_kmexpand1_seed0/ ~/ImageNette/ -n resnet_ap --nclass 10 --norm_type instance --ipc 10 --tag test --slct_type random --repeat 3 --spec nette --seed 0
+```
+For ImageWoof validation
+```sh
+python train.py -d imagenet --imagenet_dir /home/rpa4090-1/zou/D4M/data/distilled_data/imagenet_ipc100_100_s0.7_g15.0_kmexpand1/ /home/rpa4090-1/zou/data/datasets/ImageNet/ -n resnet --nclass 10 --norm_type instance --ipc 100 --tag test --slct_type random --repeat 3 --spec woof --depth 18
+python train.py -d imagenet --imagenet_dir /home/rpa4090-1/zou/D4M/data/distilled_data/imagenet_ipc100_100_s0.7_g15.0_kmexpand1/ /home/rpa4090-1/zou/data/datasets/ImageNet/ -n resnet_ap --nclass 10 --norm_type instance --ipc 100 --tag test --slct_type random --repeat 3 --spec woof
+python train.py -d imagenet --imagenet_dir /home/rpa4090-1/zou/D4M/data/distilled_data/imagenet_ipc100_100_s0.7_g15.0_kmexpand1/ /home/rpa4090-1/zou/data/datasets/ImageNet/ -n convnet --nclass 10 --norm_type instance --ipc 100 --tag test --slct_type random --repeat 3 --spec woof --depth 6
 ```
 ##### [RDED](https://github.com/LINs-lab/RDED) validation method (ImageNet-1K, CIFAR10/CIFAR100, Tiny-ImageNet)
 Pre-trained observer models are download from RDED
@@ -131,6 +139,7 @@ If you find this work useful, please consider citing:
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2025}
 }
+
 
 
 

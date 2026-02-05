@@ -1,4 +1,5 @@
 # (ICCV 2025 Highlight) Dataset Distillation via Vision-Language Category Prototype [**[arxiv](https://arxiv.org/abs/2506.23580)**] [**[appendix](https://drive.google.com/uc?export=download&id=15dBJ6kRDmMtNlPRDzNGv6FlaF0Bn3RAW)**]  
+If you find this repository useful, please consider giving it a star ⭐ on GitHub.
 - July 2025: Release preprint in arXiv.
 - June 2025: Our paper has been accepted to ICCV 2025.
 
@@ -140,6 +141,7 @@ If you find this work useful, please consider citing:
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2025}
 }
+
 
 
 
